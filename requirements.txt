@@ -1,0 +1,5 @@
+PyQt5
+PySide2
+QT-PyQt-PySide-Custom-Widgets
+pipwin
+#pipwin install cairocffi

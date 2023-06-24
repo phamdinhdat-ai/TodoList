@@ -1,0 +1,168 @@
+{
+    "ShowLogs": true,
+    "QMainWindow": [
+        {
+            "tittle": "TodoListAPP"
+        }
+    ],
+    "QSettings": [
+        {
+            "ThemeSettings": [
+                {
+                    "CustomTheme": 
+					[	
+						{
+							"Background-color": "#d1a1a1",
+							"Text-color": "#fff",
+							"Accent-color": "#03C3C3",
+							"Theme-name": "Default-Dark",
+							"Default-Theme": true
+						}
+
+					]
+                }
+            ],
+            "AppSettings": {
+                "OrginizationName": "TodoListAPP",
+                "ApplicationName": "Phenikaa University",
+                "OrginizationDormain": "https://www.facebook.com/phamdinhdat.2262002"
+            }
+        }
+    ],
+    "QPushButtonGroup": [{
+		"Buttons": [
+			"homebtn",
+			"completedbtn",
+			"calendarbtn",
+			"settingsbtn",
+            "helpbtn",
+            "aboutbtn"
+		],
+		"Style":[{
+			"Active": 	"background-color: rgb(0, 0, 0); border-left: 2px solid rgb(138, 25 , 15); font-weight: bold;",
+			"NotActive": ""
+		}]
+	}],
+    "QCustomSlideMenu": 
+	[
+		{
+			"name": "leftmenu",
+			"defaultSize": [{
+				"width": 200,
+				"height": "auto"
+				}
+			],
+				"collapsedSize": 
+			[	{
+					"width": 0,
+					"height": 0
+				}
+			],
+				"expandedSize": 
+			[	{
+					"width": 200,
+					"height": "auto"
+				}
+			],
+				"toggleButton": 
+			[	{
+					"buttonName": "selectbtn",
+					"icons": 
+					[	{
+							"whenMenuIsCollapsed": ":/icons/Icons/align-justify.svg",
+							"whenMenuIsExpanded": ":/icons/Icons/chevrons-right.svg"
+						}
+					]
+
+				}
+			],
+				"menuTransitionAnimation": 
+			[	{
+					"animationDuration": 1000,
+					"animationEasingCurve": "Linear"
+					
+				}	
+			]
+			},
+			{
+				"name": "rightmenu",
+				"defaultSize": [{
+					"width": 200,
+					"height": "auto"
+					}
+				],
+					"collapsedSize": 
+				[	{
+						"width": 0,
+						"height": 0
+					}
+				],
+					"expandedSize": 
+				[	{
+						"width": 200,
+						"height": "auto"
+					}
+				],
+					"toggleButton": 
+				[	{
+						"buttonName": "addtaskdetailbtn",
+						"icons": 
+						[	{
+								"whenMenuIsCollapsed": ":/icons/Icons/plus-square.svg",
+								"whenMenuIsExpanded": ":/icons/Icons/x-square.svg"
+							}
+						]
+	
+					}
+				],
+					"menuTransitionAnimation": 
+				[	{
+						"animationDuration": 1000,
+						"animationEasingCurve": "Linear"
+						
+					}	
+				]
+				}
+	],
+
+	"QStackedWidget":[
+		{
+			"name":"mstackedWidget",
+			"transitionAnimation":[
+				{
+					"fade":[
+						{
+							"active": true,
+							"duration":1000,
+							"easingCurve": "OutBack"
+						}
+					],
+					"slide":[
+						{
+							"active":true,
+							"duration": 1000,
+							"direction": "horizontal",
+							"easingCurve": "OutBack"
+						}
+					]
+				}
+			],
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"homebtn": "homepage",
+							"completedbtn": "completedpage",
+							"calendarbtn": "calendarpage",
+							"settingsbtn": "settinpage",
+							"helpbtn": "helppage",
+							"aboutbtn": "aboutpage"
+						}
+					]
+				}
+			]
+	
+		}
+	]
+
+}

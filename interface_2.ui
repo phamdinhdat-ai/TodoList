@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1157</width>
+    <height>766</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	border: none; 
+	background-color: transparent;
+	background: transparent;
+	paddiing:0;
+	margin: 0;
+	color:rgb(255, 255, 255);
+	text-color:rgb(244, 244, 244);
+}
+#centralwidget{
+	background-color: rgb(8, 8, 8);
+}
+
+#header{
+
+	 background-color: #ffc4b5;
+	color: rgb(255, 255, 255)
+}
+
+#mainbody{
+
+	background-color:#ffc4b5;
+	color: rgb(255, 255, 255);
+}
+
+#accountbtn{
+
+	border: 2px solid rgb(1, 4, 8);
+	border-radius:17px
+}
+
+#leftmenu, #rightmenu{
+
+ 	background-color: #818181;
+
+}
+#comboSort{
+	text-align:center;
+	background-color: #62918f;
+	border-left-radius: 12px;
+	border-right-radius:12px;
+	border: 2px solid #ffffe9;
+	border-top-left-radius: 10px  ; 
+	border-bottom-left-radius: 10px ;
+}
+QPushButton{
+
+	text-align: left;
+	padding: 5px 10px;
+	border-top-left-radius: 10px  ; 
+	border-bottom-left-radius: 10px ;
+	color: rgb(255, 255, 255);
+
+
+}
+
+QLineEdit{
+	background-color: rgb(103, 103, 103);
+	padd ing: 3px 5px;
+	border-radius: 5px;
+}
+QDateEdit{
+	background-color: rgb(103, 103, 103);
+	padd ing: 3px 5px;
+	border-radius: 5px;
+	
+}
+#homebtn{
+
+	border-left: 2px solid rgb(138, 25, 15);
+	font-weight: bold;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignTop">
+     <widget class="QWidget" name="header" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="selectbtn">
+            <property name="font">
+             <font>
+              <family>MS Sans Serif</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>My APP</string>
+            </property>
+            <property name="icon">
+             <iconset resource="QSS/QSS_Resources.qrc">
+              <normaloff>:/icons/Icons/align-justify.svg</normaloff>:/icons/Icons/align-justify.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="searchbtn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="QSS/QSS_Resources.qrc">
+              <normaloff>:/icons/Icons/search.svg</normaloff>:/icons/Icons/search.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="search">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Myanmar Text</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Search Task </string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QPushButton" name="accountbtn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="QSS/QSS_Resources.qrc">
+              <normaloff>:/icons/Icons/user.svg</normaloff>:/icons/Icons/user.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="mainbody" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
+        <widget class="QCustomSlideMenu" name="leftmenu" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+
+	text-align: left;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QFrame" name="frame_3">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QPushButton" name="homebtn">
+               <property name="text">
+                <string>Home</string>
+               </property>
+               <property name="icon">
+                <iconset resource="QSS/QSS_Resources.qrc">
+                 <normaloff>:/icons/Icons/home.svg</normaloff>:/icons/Icons/home.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="completedbtn">
+               <property name="text">
+                <string>Completed</string>
+               </property>
+               <property name="icon">
+                <iconset resource="QSS/QSS_Resources.qrc">
+                 <normaloff>:/icons/Icons/check-square.svg</normaloff>:/icons/Icons/check-square.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calendarbtn">
+               <property name="text">
+                <string>Calendar</string>
+               </property>
+               <property name="icon">
+                <iconset resource="QSS/QSS_Resources.qrc">
+                 <normaloff>:/icons/Icons/calendar.svg</normaloff>:/icons/Icons/calendar.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QPushButton" name="settingsbtn">
+               <property name="text">
+                <string>Settings</string>
+               </property>
+               <property name="icon">
+                <iconset resource="QSS/QSS_Resources.qrc">
+                 <normaloff>:/icons/Icons/settings.svg</normaloff>:/icons/Icons/settings.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="helpbtn">
+               <property name="text">
+                <string>Help</string>
+               </property>
+               <property name="icon">
+                <iconset resource="QSS/QSS_Resources.qrc">
+                 <normaloff>:/icons/Icons/help-circle.svg</normaloff>:/icons/Icons/help-circle.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="aboutbtn">
+               <property name="text">
+                <string>About</string>
+               </property>
+               <property name="icon">
+                <iconset resource="QSS/QSS_Resources.qrc">
+                 <normaloff>:/icons/Icons/info.svg</normaloff>:/icons/Icons/info.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="mainmenu" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QCustomStackedWidget" name="mstackedWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="homepage">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QWidget" name="widget" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_5">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+	text-align:center;
+	background-color: #62918f;
+	border-left-radius: 12px;
+	border-right-radius:12px;
+	border: 2px solid #ffffe9;
+
+}
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QLabel" name="label_2">
+                      <property name="font">
+                       <font>
+                        <pointsize>18</pointsize>
+                        <weight>75</weight>
+                        <italic>false</italic>
+                        <bold>true</bold>
+                        <underline>true</underline>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>TodoList</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="sorttaskbtn">
+                      <property name="maximumSize">
+                       <size>
+                        <width>150</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Myanmar Text</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Sort Task</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="QSS/QSS_Resources.qrc">
+                        <normaloff>:/icons/Icons/layers.svg</normaloff>:/icons/Icons/layers.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>24</width>
+                        <height>24</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="deletetaskbtn">
+                      <property name="maximumSize">
+                       <size>
+                        <width>150</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Myanmar Text</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Delete Task </string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="QSS/QSS_Resources.qrc">
+                        <normaloff>:/icons/Icons/trash-2.svg</normaloff>:/icons/Icons/trash-2.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>24</width>
+                        <height>24</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="addtaskdetailbtn">
+                      <property name="maximumSize">
+                       <size>
+                        <width>150</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Myanmar Text</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Add Task Detail</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="QSS/QSS_Resources.qrc">
+                        <normaloff>:/icons/Icons/plus-square.svg</normaloff>:/icons/Icons/plus-square.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>24</width>
+                        <height>24</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget">
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="autoFillBackground">
+                    <bool>false</bool>
+                   </property>
+                   <property name="inputMethodHints">
+                    <set>Qt::ImhNone</set>
+                   </property>
+                   <property name="lineWidth">
+                    <number>1</number>
+                   </property>
+                   <property name="midLineWidth">
+                    <number>0</number>
+                   </property>
+                   <property name="showDropIndicator" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="dragEnabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="alternatingRowColors">
+                    <bool>false</bool>
+                   </property>
+                   <property name="textElideMode">
+                    <enum>Qt::ElideMiddle</enum>
+                   </property>
+                   <property name="sortingEnabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rowCount">
+                    <number>0</number>
+                   </property>
+                   <attribute name="horizontalHeaderVisible">
+                    <bool>true</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderCascadingSectionResizes">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderMinimumSectionSize">
+                    <number>50</number>
+                   </attribute>
+                   <attribute name="horizontalHeaderDefaultSectionSize">
+                    <number>140</number>
+                   </attribute>
+                   <attribute name="horizontalHeaderHighlightSections">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderStretchLastSection">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="verticalHeaderVisible">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="verticalHeaderCascadingSectionResizes">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="verticalHeaderDefaultSectionSize">
+                    <number>30</number>
+                   </attribute>
+                   <attribute name="verticalHeaderHighlightSections">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="verticalHeaderStretchLastSection">
+                    <bool>false</bool>
+                   </attribute>
+                   <column>
+                    <property name="text">
+                     <string>Task Name </string>
+                    </property>
+                    <property name="background">
+                     <color>
+                      <red>70</red>
+                      <green>90</green>
+                      <blue>6</blue>
+                     </color>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Description</string>
+                    </property>
+                    <property name="background">
+                     <color>
+                      <red>70</red>
+                      <green>90</green>
+                      <blue>6</blue>
+                     </color>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Deadline</string>
+                    </property>
+                    <property name="background">
+                     <color>
+                      <red>70</red>
+                      <green>90</green>
+                      <blue>6</blue>
+                     </color>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Importance</string>
+                    </property>
+                    <property name="background">
+                     <color>
+                      <red>70</red>
+                      <green>90</green>
+                      <blue>6</blue>
+                     </color>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="aboutpage">
+             <widget class="QLabel" name="label_6">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>190</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>aboutpage</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="helppage">
+             <widget class="QLabel" name="label_5">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>180</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>helpage</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="calendarpage">
+             <property name="styleSheet">
+              <string notr="true">#calendarpage{
+
+	background-color: #9ac1ed;
+	color: #9fa2a6;
+	text-color: #edeef0;
+}</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QCalendarWidget" name="calendarWidget">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <stylestrategy>PreferDefault</stylestrategy>
+                 </font>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#calendarWidget{
+
+	background-color: #9ac1ed;
+	color: #9fa2a6;
+	text-color: #edeef0;
+}</string>
+                </property>
+                <property name="inputMethodHints">
+                 <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhEmailCharactersOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhHiddenText|Qt::ImhLatinOnly|Qt::ImhLowercaseOnly|Qt::ImhNoTextHandles|Qt::ImhSensitiveData|Qt::ImhUppercaseOnly|Qt::ImhUrlCharactersOnly</set>
+                </property>
+                <property name="firstDayOfWeek">
+                 <enum>Qt::Monday</enum>
+                </property>
+                <property name="gridVisible">
+                 <bool>false</bool>
+                </property>
+                <property name="dateEditAcceptDelay">
+                 <number>1500</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="completedpage">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QFrame" name="frame_6">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <widget class="QFrame" name="frame_8">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <widget class="QLabel" name="Completed">
+                      <property name="font">
+                       <font>
+                        <family>Myanmar Text</family>
+                        <pointsize>13</pointsize>
+                        <weight>75</weight>
+                        <italic>false</italic>
+                        <bold>true</bold>
+                        <underline>true</underline>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Completed Task</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_7">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <item>
+                     <widget class="QTableWidget" name="tableWidget_2">
+                      <attribute name="horizontalHeaderCascadingSectionResizes">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderDefaultSectionSize">
+                       <number>135</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderStretchLastSection">
+                       <bool>true</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderCascadingSectionResizes">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
+                      </attribute>
+                      <column>
+                       <property name="text">
+                        <string>Task</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Description</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Deadline</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Important</string>
+                       </property>
+                      </column>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="settinpage">
+             <widget class="QLabel" name="label_7">
+              <property name="geometry">
+               <rect>
+                <x>260</x>
+                <y>190</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>setting page</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+        <widget class="QCustomSlideMenu" name="rightmenu" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+
+	background-color: rgb(255, 148, 148);
+	border: 2px solid rgb(6, 251, 255);
+	border-right-radius: 19px;
+	border-left-radius: 19px;
+}
+
+#addtask, #deletetask, #sorttask{
+
+	background-color: rgb(255, 148, 148);
+	border: 2px solid rgb(6, 251, 255);
+	border-right-radius: 19px;
+	border-left-radius: 19px;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>53</width>
+              <height>53</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>49</width>
+              <height>49</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::WinPanel</enum>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <property name="midLineWidth">
+             <number>0</number>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="QSS/QSS_Resources.qrc">:/icons/Icons/edit.svg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="taskname">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="maxLength">
+             <number>32767</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Task Name</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="description">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Description</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QDateEdit" name="dateEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>122</width>
+              <height>33</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="dateTime">
+             <datetime>
+              <hour>0</hour>
+              <minute>0</minute>
+              <second>0</second>
+              <year>2000</year>
+              <month>3</month>
+              <day>1</day>
+             </datetime>
+            </property>
+            <property name="currentSection">
+             <enum>QDateTimeEdit::MonthSection</enum>
+            </property>
+            <property name="displayFormat">
+             <string notr="true">M/d/yyyy</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="importance">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>10</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::StrongFocus</enum>
+            </property>
+            <property name="acceptDrops">
+             <bool>true</bool>
+            </property>
+            <property name="accessibleName">
+             <string/>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Importance</string>
+            </property>
+            <property name="icon">
+             <iconset resource="QSS/QSS_Resources.qrc">
+              <normaloff>:/icons/Icons/check-circle.svg</normaloff>:/icons/Icons/check-circle.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="autoRepeat">
+             <bool>false</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+            <property name="autoRepeatDelay">
+             <number>300</number>
+            </property>
+            <property name="tristate">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QPushButton" name="addtask">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Add Task </string>
+            </property>
+            <property name="icon">
+             <iconset resource="QSS/QSS_Resources.qrc">
+              <normaloff>:/icons/Icons/file-plus.svg</normaloff>:/icons/Icons/file-plus.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomSlideMenu</class>
+   <extends>QWidget</extends>
+   <header location="global">Custom_Widgets.Widgets.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header location="global">Custom_Widgets.Widgets.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="QSS/QSS_Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
